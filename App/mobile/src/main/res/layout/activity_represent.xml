@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/capitol"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scaleType="center"
+
+    tools:context="com.example.m117.represent.representActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Represent!"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif-light"
+        android:textSize="40sp"
+        android:textColor="@color/colorTitle"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="&quot;Made by the people, for the people&quot;"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginBottom="62dp"
+        android:background="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:alpha = ".85"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:autoText="false" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/toMain"
+        android:src="@drawable/l"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:onClick="sendMessage"
+        />
+
+</RelativeLayout>
